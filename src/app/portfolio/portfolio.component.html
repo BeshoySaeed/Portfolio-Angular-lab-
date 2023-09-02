@@ -1,0 +1,10 @@
+<section class="container-fluid">
+  <p class="h1 py-4 ps-5 fw-bold shad-text">Portfolio</p>
+  <div class="container">
+    <div class="row gap-5">
+      <div class="col-lg-3 col-8 mx-4" *ngFor="let item of card">
+        <app-port-card [card]="item"></app-port-card>
+      </div>
+    </div>
+  </div>
+</section>

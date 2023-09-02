@@ -1,0 +1,27 @@
+<section class="bg-dark">
+  <section class="skills container pt-3 text-center text-white">
+    <p class="h1 py-4">Skills</p>
+    <p class="text-white-50 px-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sed
+      voluptatem maiores quod earum eum, tempore quae dolorum laborum porro
+      voluptas suscipit impedit ad ducimus explicabo, iure sunt qui ipsam!
+    </p>
+    <div class="skills-bar my-5 py-5">
+      <div class="row">
+        <div class="sill-words d-flex flex-column col-12 col-md-3">
+          <p class="focus-word">MY FOCUS</p>
+
+          <p>UI/UX Designer</p>
+          <p>Responsive Design</p>
+          <p>Web Design</p>
+          <p>Mobile App Design</p>
+        </div>
+        <div class="cont col-lg-8 col-12">
+          <div class="pro col-12" *ngFor="let item of progressArr">
+            <app-progress [progressData]="item" class="col-12"></app-progress>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

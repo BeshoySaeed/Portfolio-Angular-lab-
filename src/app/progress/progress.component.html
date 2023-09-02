@@ -1,0 +1,20 @@
+<div class="progress">
+  <div
+    class="progress-bar bg-warning text-dark fw-bold"
+    role="progressbar"
+    style="width: 100px"
+    aria-valuenow="15"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  >
+    {{ progressData.title }}
+  </div>
+  <div
+    class="progress-bar bg-danger"
+    role="progressbar"
+    [style]="progressData.width"
+    aria-valuenow="30"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
